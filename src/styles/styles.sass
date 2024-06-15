@@ -1,0 +1,58 @@
+@import 'normalize'
+@import 'variables'
+@import 'fonts'
+@import 'typo'
+
+@import 'blocks/header'
+@import 'blocks/footer'
+
+*
+	box-sizing: border-box
+	&:before,
+	&:after
+		box-sizing: border-box
+
+html,
+body
+	margin: 0
+	padding: 0
+	height: 100%
+	// adjust font size
+	font-size: 100%
+	-webkit-text-size-adjust: 100%
+	// font varient
+	font-variant-ligatures: none
+	-webkit-font-variant-ligatures: none
+	// smoothing
+	text-rendering: optimizeLegibility
+	-moz-osx-font-smoothing: grayscale
+	font-smoothing: antialiased
+	-webkit-font-smoothing: antialiased
+	text-shadow: rgba(0, 0, 0, .01) 0 0 1px
+
+body
+	position: relative
+	display: flex
+	flex-direction: column
+	font-family: $mainFont
+	font-size: 16px
+	line-height: 1.5
+	color: $siteColor
+	background-color: $whiteColor
+
+.main
+	position: relative
+	z-index: 100
+	flex-grow: 1
+	flex-shrink: 0
+	flex-basis: auto
+
+.container
+	position: relative
+	margin-left: auto
+	margin-right: auto
+	padding-left: 1.25rem
+	padding-right: 1.25rem
+	@media #{$desktop}
+		max-width: 1176px
+		width: 100%

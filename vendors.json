@@ -1,0 +1,6 @@
+{
+  "lodash": {
+    "src": "lodash.min.js",
+    "dest": "lodash"
+  }
+}

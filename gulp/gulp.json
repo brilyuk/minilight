@@ -1,0 +1,53 @@
+{
+  "dir": {
+    "dev": "public",
+    "prod": "build"
+  },
+  "style": {
+    "src": "src/styles/styles.sass",
+    "dest": "assets/css"
+  },
+  "script": {
+    "src": [
+      "src/js/main.js"
+    ],
+    "bundles": [
+      {
+        "path": "src/js/main.js",
+        "name": "main"
+      }
+    ],
+    "dest": "assets/js"
+  },
+  "pug": {
+    "base": "src/pug",
+    "src": {
+      "all": "src/pug/**/*.pug",
+      "pages": [
+        "*.pug",
+        "pages/**/*.pug"
+      ]
+    },
+    "dest": ""
+  },
+  "product": {
+    "paths": [
+      "gulp/**/*.*",
+      "public/**/*.*",
+      "src/**/*.*",
+      ".babelrc",
+      ".eslintignore",
+      ".eslintrc.json",
+      ".gitignore",
+      ".npmrc",
+      ".prettierrc",
+      "gulpfile.js",
+      "jsconfig.json",
+      "package-lock.json",
+      "package.json",
+      "README.md",
+      "vendors.json"
+    ]
+  },
+  "watch": ["assets/img", "assets/fonts", "assets/video", "vendors"]
+}
