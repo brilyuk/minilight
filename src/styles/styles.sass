@@ -1,10 +1,20 @@
 @import 'normalize'
 @import 'variables'
 @import 'fonts'
+@import 'forms'
 @import 'typo'
+@import 'buttons'
 
 @import 'blocks/header'
 @import 'blocks/footer'
+@import 'blocks/intro-box'
+@import 'blocks/about-box'
+@import 'blocks/advantages-box'
+@import 'blocks/property-box'
+@import 'blocks/feedback-box'
+@import 'blocks/info-box'
+@import 'blocks/delivery-box'
+@import 'blocks/form-box'
 
 *
 	box-sizing: border-box
@@ -39,6 +49,9 @@ body
 	line-height: 1.5
 	color: $siteColor
 	background-color: $whiteColor
+	min-width: 320px
+	&.dark
+		background-color: $darkColor
 
 .main
 	position: relative
@@ -51,8 +64,5 @@ body
 	position: relative
 	margin-left: auto
 	margin-right: auto
-	padding-left: 1.25rem
-	padding-right: 1.25rem
-	@media #{$desktop}
-		max-width: 1176px
-		width: 100%
+	max-width: 480px
+	width: 100%

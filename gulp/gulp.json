@@ -4,12 +4,12 @@
     "prod": "build"
   },
   "style": {
-    "src": "src/styles/styles.sass",
+    "src": "src/styles/**/*.sass",
     "dest": "assets/css"
   },
   "script": {
     "src": [
-      "src/js/main.js"
+      "src/js/**/*.js"
     ],
     "bundles": [
       {

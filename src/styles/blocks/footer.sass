@@ -1,10 +1,33 @@
+@import '../variables'
+
 .footer
 	position: relative
 	z-index: 50
 	flex-grow: 0
 	flex-shrink: 0
 	flex-basis: auto
-	margin: 0 1.25rem
-	padding: 2.5rem 0 1.25rem
-	background-color: $darkColor
-	border-radius: 2.5rem 2.5rem 0 0
+	&__inner
+		background-color: $whiteColor
+	&__image
+		display: block
+		margin-bottom: 20px
+		width: 100%
+		height: auto
+	&__content
+		padding: 0 30px
+	&__info
+		text-align: center
+		&-text
+			margin-bottom: 10px
+			font-size: 14px
+			color: $siteColor
+	&__link
+		display: block
+		margin-bottom: 10px
+		font-weight: 600
+		color: $siteColor
+		text-align: center
+		&:hover
+			color: $brandColor
+	&__bottom
+		text-align: center

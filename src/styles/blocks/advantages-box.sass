@@ -1,0 +1,35 @@
+@import '../variables'
+
+.advantages-box
+	padding: 20px 0
+	background-color: $darkGrayColor
+	&__title
+		margin: 0 0 35px
+		font-size: 32px
+		color: $brandColor
+		text-align: center
+		span
+			color: $whiteColor
+	&__list
+		margin: 0
+		padding: 0 30px
+		list-style: none
+	&__item
+		margin-bottom: 30px
+		display: flex
+		border-radius: 25px
+		background-color: $whiteColor
+		overflow: hidden
+		&-image
+			flex-shrink: 0
+		&-content
+			padding: 10px 20px
+		&-title
+			font-size: 17px
+			font-weight: bold
+		&-text
+			line-height: 1.3
+	&__footer
+		padding: 0 30px
+	&__button
+		width: 100%

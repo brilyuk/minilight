@@ -1,0 +1,64 @@
+@import '../variables'
+
+.feedback-box
+	padding: 20px 0
+	background-color: $darkGrayColor
+	&__title
+		margin: 0 0 20px
+		font-size: 32px
+		color: $brandColor
+		text-align: center
+		span
+			color: $whiteColor
+	&__subtitle
+		&-wrap
+			margin: 0 0 35px
+			display: flex
+			justify-content: center
+			align-items: center
+		&-icon
+			display: block
+			margin-right: 10px
+		&-text
+			font-size: 18px
+			font-weight: bold
+			line-height: 1
+			color: $whiteColor
+	&__list
+		margin: 0
+		padding: 0 30px
+		list-style: none
+	&__item
+		margin-bottom: 30px
+		background-color: $whiteColor
+		border-radius: 25px
+		overflow: hidden
+		&-image
+			margin-bottom: 10px
+			display: block
+			width: 100%
+			height: auto
+		&-content
+			padding: 0 20px 20px
+		&-profile
+			position: relative
+			display: flex
+			align-items: center
+			margin-bottom: 20px
+			&-quote
+				position: absolute
+				top: 0
+				right: 0
+			&-image
+				display: block
+				margin-right: 10px
+				border-radius: 50%
+			&-name
+				font-size: 20px
+				font-weight: bold
+			&-city
+				font-size: 18px
+				line-height: 1.2
+		&-text
+			font-size: 18px
+			line-height: 1.3

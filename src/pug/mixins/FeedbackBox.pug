@@ -1,0 +1,19 @@
+mixin FeedbackBox(config)
+	section.feedback-box
+		h2.feedback-box__title <span>ВІДГУКИ</span> <br/>ПОКУПЦІВ
+		.feedback-box__subtitle-wrap
+			img.feedback-box__subtitle-icon(src="assets/img/like-icon.svg" width="30" height="30" loading="lazy" alt="")
+			.feedback-box__subtitle-text 1214 позитивних відгуків
+		if config.data
+			ul.feedback-box__list
+				each item in config.data
+					li.feedback-box__item
+						img.feedback-box__item-image(src=item.image.src width=item.image.width height=item.image.height loading="lazy" alt="")
+						.feedback-box__item-content
+							.feedback-box__item-profile
+								img.feedback-box__item-profile-quote(src="assets/img/quote-icon.svg" width="60" height="60" loading="lazy" alt="")
+								img.feedback-box__item-profile-image(src=item.profile.image width="75" height="75" loading="lazy" alt="")
+								.feedback-box__item-profile-wrap
+									.feedback-box__item-profile-name!= item.profile.name
+									.feedback-box__item-profile-city!= item.profile.city
+							.feedback-box__item-text!= item.text

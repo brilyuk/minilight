@@ -1,0 +1,12 @@
+mixin DeliveryBox(config)
+	section.delivery-box
+		h2.delivery-box__title Доставка та гарантія
+		if config.data
+			ul.delivery-box__list
+				each item in config.data
+					li.delivery-box__item
+						.delivery-box__item-icon
+							img.delivery-box__item-icon-i(src=item.icon width="50" height="50" loading="lazy" alt="")
+						.delivery-box__item-wrap
+							.delivery-box__item-title!= item.title
+							.delivery-box__item-text!= item.text

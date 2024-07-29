@@ -1,0 +1,13 @@
+mixin AdvantagesBox(config)
+	section.advantages-box
+		h2.advantages-box__title <span>ПЕРЕВАГИ</span> <br/>АКУМУЛЯТОРНОГО LED ЛІХТАРИКА
+		if config.data
+			ul.advantages-box__list
+				each item in config.data
+					li.advantages-box__item
+						img.advantages-box__item-image(src=item.image width="150" height="205" loading="lazy" alt="")
+						.advantages-box__item-content
+							.advantages-box__item-title!= item.title
+							.advantages-box__item-text!= item.text
+			.advantages-box__footer
+				a.advantages-box__button.btn.btn-default.scroll-link(href="#form") Замовити зі знижкою

@@ -1,6 +1,10 @@
 {
-  "lodash": {
-    "src": "lodash.min.js",
-    "dest": "lodash"
-  }
+	"lodash": {
+		"src": "lodash.min.js",
+		"dest": "lodash"
+	},
+	"swiper": {
+		"src": ["swiper-bundle.min.js", "swiper-bundle.min.css"],
+		"dest": "swiper"
+	}
 }

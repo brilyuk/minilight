@@ -1,9 +1,122 @@
 extends layouts/Layout
 
-append variables
-  - var title = 'Твій освітній простір | Softbook';
+include mixins/IntroBox
+include mixins/AboutBox
+include mixins/AdvantagesBox
+include mixins/PropertyBox
+include mixins/FeedbackBox
+include mixins/InfoBox
+include mixins/DeliveryBox
+include mixins/FormBox
+
+block append variables
+	- var title = "Mini led фонарик";
+	- var attrsBody = { class: "dark" };
+	-
+		var
+			introBoxData = [
+				{
+					image: "assets/img/slide-img-1.jpg",
+					text: "Час автономної роботи: до 4 годин"
+				},
+				{
+					image: "assets/img/slide-img-2.jpg",
+					text: "7 режимів роботи (є червоне світло)"
+				},
+				{
+					image: "assets/img/slide-img-3.jpg",
+					text: "Оснащений карабіном, магнітом, підставкою"
+				}
+			];
+	-
+		var
+			advantagesList = [
+				{
+					image: "assets/img/advantages-box-image-1.jpg",
+					title: "4 години освітлення",
+					text: "Ємність акумулятора 500 мАч забезпечує до 4 годин роботи без підзарядки"
+				},
+				{
+					image: "assets/img/advantages-box-image-2.jpg",
+					title: "7 режими роботи",
+					text: "Звичайне біле світло, приглушене біле світло, звичайне жовте світло, приглушене жовте світло, червоне світло, попереджувальне червоне миготіння, яскраве світло"
+				},
+				{
+					image: "assets/img/advantages-box-image-3.jpg",
+					title: "Універсальна фіксація",
+					text: "Ліхтарик оснащений карабіном, вбудованим магнітом і затискною підставкою, що в результаті дає безліч можливих сценаріїв використання"
+				}
+			];
+	-
+		var
+			feedbackBoxData = [
+				{
+					image: {
+						src: "assets/img/feedback-box-image-1.jpg",
+						width: 420,
+						height: 504
+					},
+					profile: {
+						image: "assets/img/profile-image-1.jpg",
+						name: "Ольга Іваненко",
+						city: "м. Харків"
+					},
+					text: "Дуже задоволена покупкою! Ліхтарик компактний, але при цьому дуже потужний. Замовлення прийшло швидко, добре запаковане. Дякую!"
+				},
+				{
+					image: {
+						src: "assets/img/feedback-box-image-2.jpg",
+						width: 420,
+						height: 327
+					},
+					profile: {
+						image: "assets/img/profile-image-2.jpg",
+						name: "Артем Паламарчук",
+						city: "м. Львів"
+					},
+					text: "Ліхтарик перевершив всі мої очікування. Заряд тримає довго, а світло дуже яскраве. Дуже зручно носити з собою. Рекомендую!"
+				},
+				{
+					image: {
+						src: "assets/img/feedback-box-image-3.jpg",
+						width: 420,
+						height: 504
+					},
+					profile: {
+						image: "assets/img/profile-image-3.jpg",
+						name: "Віталій Поставнюк",
+						city: "м. Дніпро"
+					},
+					text: "Ліхтарик компактний і зручний у використанні. Швидка доставка і відмінна якість. Дуже задоволений покупкою, буду ще замовляти сину!"
+				}
+			];
+	-
+		var
+			deliveryBoxData = [
+				{
+					icon: "assets/img/delivery-icon.svg",
+					title: "Доставка",
+					text: "Доставка поштою протягом 1-3 робочих днів"
+				},
+				{
+					icon: "assets/img/saving-money-icon.svg",
+					title: "Жодних предоплат",
+					text: "Оплата замовлень здійснюється за фактом отримання товару"
+				},
+				{
+					icon: "assets/img/package-icon.svg",
+					title: "Гарантія",
+					text: "Перед відправкою всі товари проходять ретельну перевірку на наявність браку"
+				}
+			];
 
 block mainContent
-  <div class="container">
-    <h1>Home page</h1>
-  </div>
+	.container
+		+IntroBox({ data: introBoxData })
+		+AboutBox({})
+		+AdvantagesBox({ data: advantagesList })
+		+PropertyBox({})
+		+FeedbackBox({ data: feedbackBoxData })
+		+InfoBox({})
+		+DeliveryBox({ data: deliveryBoxData })
+		+FormBox({})

@@ -1,0 +1,49 @@
+mixin IntroBox(config)
+	section.intro-box
+		.intro-box__top на другий ліхтарик знижка - 50 грн
+		h1.intro-box__title АКУМУЛЯТОРНИЙ <span>LED ЛІХТАРИК</span> <br/>З 7 РЕЖИМАМИ
+		if config.data
+			.intro-box__wrap
+				.intro-box__slider
+					.intro-box__slider-wrap.swiper-wrapper
+						each item in config.data
+							.intro-box__slider-item.swiper-slide
+								img.intro-box__slider-item-i(
+									src=item.image,
+									width="480",
+									height="480",
+									loading="lazy",
+									alt=""
+								)
+					.intro-box__slider-navigation
+						button.intro-box__slider-navigation-button.intro-box__slider-navigation-button_prev(
+							type="button"
+						)
+						button.intro-box__slider-navigation-button.intro-box__slider-navigation-button_next(
+							type="button"
+						)
+				.intro-box__price-wrap
+					.intro-box__price-box.intro-box__price-box_old
+						.intro-box__price-title Звичайна ціна:
+						.intro-box__price-row
+							span.intro-box__price-value 749
+							span.intro-box__price-currency грн
+					.intro-box__price-box.intro-box__price-box_new
+						.intro-box__price-title Ціна сьогодні:
+						.intro-box__price-row
+							span.intro-box__price-value 299
+							span.intro-box__price-currency грн
+				.intro-box__thumbs.swiper-thumbs
+					each thumb in config.data
+						.intro-box__thumbs-item
+							.intro-box__thumbs-item-image
+								img.intro-box__thumbs-item-image-i(
+									src=thumb.image,
+									width="150",
+									height="150",
+									loading="lazy",
+									alt=""
+								)
+							.intro-box__thumbs-item-text!= thumb.text
+		.intro-box__footer
+			a.intro-box__button.btn.btn-default.scroll-link(href="#form") Замовити зі знижкою

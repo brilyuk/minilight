@@ -3,44 +3,57 @@ include ../mixins/Header
 
 //- Global Variables
 block variables
-  - var CWD = '';
-  - var attrsHtml = { lang: 'uk', dir: dir || 'ltr' };
-  - var title = 'Softbook';
+  - var CWD = "";
+  - var attrsHtml = { lang: "uk", dir: dir || "ltr" };
+  - var title = "Softbook";
   - var attrsBody = {};
   - var attrsMain = {};
   - var attrsLayout = {};
-  - var APIGmap = '';
-
+  - var APIGmap = "";
 
 doctype html
-html()&attributes(attrsHtml)
+html&attributes(attrsHtml)
   head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=edge')
-    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=480")
 
-    title=title
+    title= title
 
-    link(rel="apple-touch-icon" sizes="180x180", href=`${CWD}assets/img/favicons/apple-touch-icon.png`)
-    link(rel="shortcut icon" type="image/png" href=`${CWD}assets/img/favicons/favicon.png`)
-    link(rel="manifest" href=`${CWD}assets/img/favicons/manifest.json`)
-    meta(name='msapplication-TileImage' content=`${CWD}assets/img/favicons/mstile-150x150.png`)
-    meta(name="theme-color" content="#D3DEFD")
+    link(
+      rel="apple-touch-icon",
+      sizes="180x180",
+      href=`${CWD}assets/img/favicons/apple-touch-icon.png`
+    )
+    link(
+      rel="icon",
+      type="image/png",
+      sizes="32x32",
+      href=`${CWD}assets/img/favicons/favicon-32x32.png`
+    )
+    link(
+      rel="icon",
+      type="image/png",
+      sizes="16x16",
+      href=`${CWD}assets/img/favicons/favicon-16x16.png`
+    )
+    link(rel="manifest", href=`${CWD}assets/img/favicons/site.webmanifest`)
+    meta(name="theme-color" content="#2b2d32")
 
-    link(rel='preconnect' href='https://fonts.googleapis.com')
-    link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
-    link(href='https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap' rel='stylesheet')
-    link(href=`${CWD}assets/css/styles.min.css`, type="text/css" rel='stylesheet' id="style-default")
+    link#style-default(
+      href=`${CWD}assets/css/styles.min.css`,
+      type="text/css",
+      rel="stylesheet"
+    )
 
-  body()&attributes(attrsBody)
-
+  body&attributes(attrsBody)
     block beforeMainContent
 
-    +Header
+    //- +Header
 
-    main.main()&attributes(attrsMain)
+    main.main&attributes(attrsMain)
       block mainContent
-    
+
     +Footer
 
     block afterMainContent
@@ -48,6 +61,11 @@ html()&attributes(attrsHtml)
     block layoutScripts
 
     block scripts
+      link(
+        href=`${CWD}vendors/swiper/swiper-bundle.min.css`,
+        type="text/css",
+        rel="stylesheet"
+      )
       script(src=`${CWD}assets/js/main.js`)
 
     block footerStyles

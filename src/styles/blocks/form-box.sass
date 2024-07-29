@@ -1,0 +1,73 @@
+@import '../variables'
+
+.form-box
+	padding: 30px 0 20px
+	background-color: $darkGrayColor
+	&.submitted
+		.form-box__wrap
+			display: none
+		.form-box__thanks
+			display: block
+	&__title
+		margin: 0 0 10px
+		font-size: 36px
+		color: $whiteColor
+		text-align: center
+	&__subtitle
+		margin: 0 0 25px
+		font-size: 22px
+		color: $whiteColor
+		text-align: center
+	&__form
+		position: relative
+		&-group
+			padding: 0 30px 20px
+		&-button
+			width: 100%
+			width: 100%
+			&_submit
+				display: none
+			&.process
+				opacity: 0.5
+				pointer-events: none
+		&.process
+			pointer-events: none
+			&:before
+				position: absolute
+				content: ""
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background-color: rgba($siteColor, .5)
+				z-index: 1
+			&:after
+				position: absolute
+				content: ""
+				top: 50%
+				left: 50%
+				width: 60px
+				height: 60px
+				margin: -30px 0 0 -30px
+				border-width: 6px
+				border-style: solid
+				border-color: $brandColor rgba($whiteColor,0.2) rgba($whiteColor,0.2)
+				border-radius: 50%
+				animation: 0.5s rotation linear infinite
+				z-index: 2
+	&__thanks
+		display: none
+		padding: 0 30px
+		&-title
+			color: $whiteColor
+			text-align: center
+		&-subtitle
+			font-size: 22px
+			line-height: 1.3
+			color: $whiteColor
+			text-align: center
+@keyframes rotation
+	0%
+		transform: rotate(0)
+	100%
+		transform: rotate(360deg)

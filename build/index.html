@@ -4,56 +4,258 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Твій освітній простір | Softbook</title>
+    <meta name="viewport" content="width=480">
+    <title>Mini led фонарик</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-    <link rel="shortcut icon" type="image/png" href="assets/img/favicons/favicon.png">
-    <link rel="manifest" href="assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="assets/img/favicons/mstile-150x150.png">
-    <meta name="theme-color" content="#D3DEFD">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="assets/css/styles.min.css" type="text/css" rel="stylesheet" id="style-default">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <meta name="theme-color" content="#2b2d32">
+    <link id="style-default" href="assets/css/styles.min.css" type="text/css" rel="stylesheet">
   </head>
 
-  <body>
-    <header class="header">
-      <div class="container">header</div>
-    </header>
+  <body class="dark">
     <main class="main">
       <div class="container">
-        <h1>Home page</h1>
+        <section class="intro-box">
+          <div class="intro-box__top">на другий ліхтарик знижка - 50 грн</div>
+          <h1 class="intro-box__title">АКУМУЛЯТОРНИЙ <span>LED ЛІХТАРИК</span> <br />З 7 РЕЖИМАМИ</h1>
+          <div class="intro-box__wrap">
+            <div class="intro-box__slider">
+              <div class="intro-box__slider-wrap swiper-wrapper">
+                <div class="intro-box__slider-item swiper-slide"><img class="intro-box__slider-item-i" src="assets/img/slide-img-1.jpg" width="480" height="480" loading="lazy" alt="" /></div>
+                <div class="intro-box__slider-item swiper-slide"><img class="intro-box__slider-item-i" src="assets/img/slide-img-2.jpg" width="480" height="480" loading="lazy" alt="" /></div>
+                <div class="intro-box__slider-item swiper-slide"><img class="intro-box__slider-item-i" src="assets/img/slide-img-3.jpg" width="480" height="480" loading="lazy" alt="" /></div>
+              </div>
+              <div class="intro-box__slider-navigation"><button class="intro-box__slider-navigation-button intro-box__slider-navigation-button_prev" type="button"></button><button class="intro-box__slider-navigation-button intro-box__slider-navigation-button_next" type="button"></button></div>
+            </div>
+            <div class="intro-box__price-wrap">
+              <div class="intro-box__price-box intro-box__price-box_old">
+                <div class="intro-box__price-title">Звичайна ціна:</div>
+                <div class="intro-box__price-row"><span class="intro-box__price-value">749</span><span class="intro-box__price-currency">грн</span></div>
+              </div>
+              <div class="intro-box__price-box intro-box__price-box_new">
+                <div class="intro-box__price-title">Ціна сьогодні:</div>
+                <div class="intro-box__price-row"><span class="intro-box__price-value">299</span><span class="intro-box__price-currency">грн</span></div>
+              </div>
+            </div>
+            <div class="intro-box__thumbs swiper-thumbs">
+              <div class="intro-box__thumbs-item">
+                <div class="intro-box__thumbs-item-image"><img class="intro-box__thumbs-item-image-i" src="assets/img/slide-img-1.jpg" width="150" height="150" loading="lazy" alt="" /></div>
+                <div class="intro-box__thumbs-item-text">Час автономної роботи: до 4 годин</div>
+              </div>
+              <div class="intro-box__thumbs-item">
+                <div class="intro-box__thumbs-item-image"><img class="intro-box__thumbs-item-image-i" src="assets/img/slide-img-2.jpg" width="150" height="150" loading="lazy" alt="" /></div>
+                <div class="intro-box__thumbs-item-text">7 режимів роботи (є червоне світло)</div>
+              </div>
+              <div class="intro-box__thumbs-item">
+                <div class="intro-box__thumbs-item-image"><img class="intro-box__thumbs-item-image-i" src="assets/img/slide-img-3.jpg" width="150" height="150" loading="lazy" alt="" /></div>
+                <div class="intro-box__thumbs-item-text">Оснащений карабіном, магнітом, підставкою</div>
+              </div>
+            </div>
+          </div>
+          <div class="intro-box__footer"><a class="intro-box__button btn btn-default scroll-link" href="#form">Замовити зі знижкою</a></div>
+        </section>
+        <section class="about-box">
+          <h2 class="about-box__title"><span>ВІДЕО ОГЛЯД</span> <br />АКУМУЛЯТОРНОГО LED ЛІХТАРИКА</h2>
+          <div class="about-box__video-wrap">
+            <div class="about-box__video"><iframe class="about-box__video-i" width="100%" height="315" src="https://www.youtube.com/embed/2aG8XIr1bKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe><iframe class="about-box__video-i" width="100%" height="315" src="https://www.youtube.com/embed/d6KifjzDqk4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></div>
+          </div>
+          <div class="about-box__content">
+            <div class="about-box__text">Акумуляторний світлодіодний ліхтарик виручить у будь-якій ситуації: під час вечірньої прогулянки та відпочинку на природі, у разі раптових проблем із електропостачанням або якщо терміново потрібно відремонтувати машину</div>
+            <div class="about-box__image"><img class="about-box__image-i" src="assets/img/about-box-image-1.jpg" width="480" height="494" loading="lazy" alt="" /></div>
+            <div class="about-box__text">Ліхтарик оснащений карабіном, вбудованим магнітом і затискною підставкою, що в результаті дає безліч можливих сценаріїв використання: <br />- закріпити на металевій поверхні (на холодильнику чи автомобілі); <br />- причепити до рюкзака, пояса, нашийника тварини, намету; <br />- встановити на столі чи іншій поверхні. <br />Крім того, аксесуар зручно тримати у руці, адже світлодіоди не нагріваються</div>
+            <div class="about-box__image"><img class="about-box__image-i" src="assets/img/about-box-image-2.jpg" width="480" height="494" loading="lazy" alt="" /></div>
+            <div class="about-box__text"><strong>Це мультінструмент</strong> <br />У дизайні ліхтарика передбачено виріз характерної форми, що дозволяє використовувати його як гайковий ключ. <br />На задній панелі знаходиться набір насадок, які надають ліхтарику функції викрутки. Вони знімні та легко чергуються в залежності від типу гвинтів, з якими ви працюєте. <br />Вбудований аварійний молоток допоможе розбити скло для швидкої евакуації з машини у разі аварії. <br />А ще ліхтарик послужить відкривалкою для пляшки, свистком чи прикурювачем.</div>
+            <div class="about-box__image"><img class="about-box__image-i" src="assets/img/about-box-image-3.jpg" width="480" height="494" loading="lazy" alt="" /></div>
+          </div>
+        </section>
+        <section class="advantages-box">
+          <h2 class="advantages-box__title"><span>ПЕРЕВАГИ</span> <br />АКУМУЛЯТОРНОГО LED ЛІХТАРИКА</h2>
+          <ul class="advantages-box__list">
+            <li class="advantages-box__item"><img class="advantages-box__item-image" src="assets/img/advantages-box-image-1.jpg" width="150" height="205" loading="lazy" alt="" />
+              <div class="advantages-box__item-content">
+                <div class="advantages-box__item-title">4 години освітлення</div>
+                <div class="advantages-box__item-text">Ємність акумулятора 500 мАч забезпечує до 4 годин роботи без підзарядки</div>
+              </div>
+            </li>
+            <li class="advantages-box__item"><img class="advantages-box__item-image" src="assets/img/advantages-box-image-2.jpg" width="150" height="205" loading="lazy" alt="" />
+              <div class="advantages-box__item-content">
+                <div class="advantages-box__item-title">7 режими роботи</div>
+                <div class="advantages-box__item-text">Звичайне біле світло, приглушене біле світло, звичайне жовте світло, приглушене жовте світло, червоне світло, попереджувальне червоне миготіння, яскраве світло</div>
+              </div>
+            </li>
+            <li class="advantages-box__item"><img class="advantages-box__item-image" src="assets/img/advantages-box-image-3.jpg" width="150" height="205" loading="lazy" alt="" />
+              <div class="advantages-box__item-content">
+                <div class="advantages-box__item-title">Універсальна фіксація</div>
+                <div class="advantages-box__item-text">Ліхтарик оснащений карабіном, вбудованим магнітом і затискною підставкою, що в результаті дає безліч можливих сценаріїв використання</div>
+              </div>
+            </li>
+          </ul>
+          <div class="advantages-box__footer"><a class="advantages-box__button btn btn-default scroll-link" href="#form">Замовити зі знижкою</a></div>
+        </section>
+        <section class="property-box">
+          <h2 class="property-box__title"><span>ХАРАКТЕРИСТИКИ</span> <br />АКУМУЛЯТОРНОГО LED ЛІХТАРИКА</h2><img class="property-box__image" src="assets/img/property-box-image.jpg" width="480" height="368" loading="lazy" alt="" />
+          <table class="property-box__table">
+            <tr>
+              <th>Рівне світло створюють:</th>
+              <td>білі, жовті та червоні COB-світлодіоди;</td>
+            </tr>
+            <tr>
+              <th>Кількість режимів роботи:</th>
+              <td>7 (є червоне світло);</td>
+            </tr>
+            <tr>
+              <th>Ємність акумулятора:</th>
+              <td>500 мАг;</td>
+            </tr>
+            <tr>
+              <th>Час автономної роботи:</th>
+              <td>до 4 годин;</td>
+            </tr>
+            <tr>
+              <th>Роз'єм для заряджання:</th>
+              <td>Type-C;</td>
+            </tr>
+            <tr>
+              <th>Індикатори:</th>
+              <td>Рівень заряду (LED);</td>
+            </tr>
+            <tr>
+              <th>Захист від вологи:</th>
+              <td>IPX4;</td>
+            </tr>
+            <tr>
+              <th>Оснащений:</th>
+              <td>карабіном, вбудований магніт, аварійний молоток, свисток, прикурювач, функція викрутки, відкривання для пляшок;</td>
+            </tr>
+            <tr>
+              <th>Матеріал:</th>
+              <td>пластик + алюмінієвий сплав;</td>
+            </tr>
+            <tr>
+              <th>У комплекті:</th>
+              <td>зарядний кабель.</td>
+            </tr>
+          </table>
+          <div class="property-box__footer"><a class="property-box__button btn btn-default scroll-link" href="#form">Замовити зі знижкою</a></div>
+        </section>
+        <section class="feedback-box">
+          <h2 class="feedback-box__title"><span>ВІДГУКИ</span> <br />ПОКУПЦІВ</h2>
+          <div class="feedback-box__subtitle-wrap"><img class="feedback-box__subtitle-icon" src="assets/img/like-icon.svg" width="30" height="30" loading="lazy" alt="" />
+            <div class="feedback-box__subtitle-text">1214 позитивних відгуків</div>
+          </div>
+          <ul class="feedback-box__list">
+            <li class="feedback-box__item"><img class="feedback-box__item-image" src="assets/img/feedback-box-image-1.jpg" width="420" height="504" loading="lazy" alt="" />
+              <div class="feedback-box__item-content">
+                <div class="feedback-box__item-profile"><img class="feedback-box__item-profile-quote" src="assets/img/quote-icon.svg" width="60" height="60" loading="lazy" alt="" /><img class="feedback-box__item-profile-image" src="assets/img/profile-image-1.jpg" width="75" height="75" loading="lazy" alt="" />
+                  <div class="feedback-box__item-profile-wrap">
+                    <div class="feedback-box__item-profile-name">Ольга Іваненко</div>
+                    <div class="feedback-box__item-profile-city">м. Харків</div>
+                  </div>
+                </div>
+                <div class="feedback-box__item-text">Дуже задоволена покупкою! Ліхтарик компактний, але при цьому дуже потужний. Замовлення прийшло швидко, добре запаковане. Дякую!</div>
+              </div>
+            </li>
+            <li class="feedback-box__item"><img class="feedback-box__item-image" src="assets/img/feedback-box-image-2.jpg" width="420" height="327" loading="lazy" alt="" />
+              <div class="feedback-box__item-content">
+                <div class="feedback-box__item-profile"><img class="feedback-box__item-profile-quote" src="assets/img/quote-icon.svg" width="60" height="60" loading="lazy" alt="" /><img class="feedback-box__item-profile-image" src="assets/img/profile-image-2.jpg" width="75" height="75" loading="lazy" alt="" />
+                  <div class="feedback-box__item-profile-wrap">
+                    <div class="feedback-box__item-profile-name">Артем Паламарчук</div>
+                    <div class="feedback-box__item-profile-city">м. Львів</div>
+                  </div>
+                </div>
+                <div class="feedback-box__item-text">Ліхтарик перевершив всі мої очікування. Заряд тримає довго, а світло дуже яскраве. Дуже зручно носити з собою. Рекомендую!</div>
+              </div>
+            </li>
+            <li class="feedback-box__item"><img class="feedback-box__item-image" src="assets/img/feedback-box-image-3.jpg" width="420" height="504" loading="lazy" alt="" />
+              <div class="feedback-box__item-content">
+                <div class="feedback-box__item-profile"><img class="feedback-box__item-profile-quote" src="assets/img/quote-icon.svg" width="60" height="60" loading="lazy" alt="" /><img class="feedback-box__item-profile-image" src="assets/img/profile-image-3.jpg" width="75" height="75" loading="lazy" alt="" />
+                  <div class="feedback-box__item-profile-wrap">
+                    <div class="feedback-box__item-profile-name">Віталій Поставнюк</div>
+                    <div class="feedback-box__item-profile-city">м. Дніпро</div>
+                  </div>
+                </div>
+                <div class="feedback-box__item-text">Ліхтарик компактний і зручний у використанні. Швидка доставка і відмінна якість. Дуже задоволений покупкою, буду ще замовляти сину!</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="info-box">
+          <h3 class="info-box__title">Заощаджуй прямо зараз!</h3>
+          <div class="info-box__wrap">
+            <div class="info-box__text">2 шт = <strong>548</strong> грн ( знижка -50грн )</div>
+            <div class="info-box__text">3 шт = <strong>797</strong> грн ( знижка -100грн )</div>
+            <div class="info-box__text">4 шт = <strong>1046</strong> грн ( знижка -150грн )</div>
+          </div>
+        </section>
+        <section class="delivery-box">
+          <h2 class="delivery-box__title">Доставка та гарантія</h2>
+          <ul class="delivery-box__list">
+            <li class="delivery-box__item">
+              <div class="delivery-box__item-icon"><img class="delivery-box__item-icon-i" src="assets/img/delivery-icon.svg" width="50" height="50" loading="lazy" alt="" /></div>
+              <div class="delivery-box__item-wrap">
+                <div class="delivery-box__item-title">Доставка</div>
+                <div class="delivery-box__item-text">Доставка поштою протягом 1-3 робочих днів</div>
+              </div>
+            </li>
+            <li class="delivery-box__item">
+              <div class="delivery-box__item-icon"><img class="delivery-box__item-icon-i" src="assets/img/saving-money-icon.svg" width="50" height="50" loading="lazy" alt="" /></div>
+              <div class="delivery-box__item-wrap">
+                <div class="delivery-box__item-title">Жодних предоплат</div>
+                <div class="delivery-box__item-text">Оплата замовлень здійснюється за фактом отримання товару</div>
+              </div>
+            </li>
+            <li class="delivery-box__item">
+              <div class="delivery-box__item-icon"><img class="delivery-box__item-icon-i" src="assets/img/package-icon.svg" width="50" height="50" loading="lazy" alt="" /></div>
+              <div class="delivery-box__item-wrap">
+                <div class="delivery-box__item-title">Гарантія</div>
+                <div class="delivery-box__item-text">Перед відправкою всі товари проходять ретельну перевірку на наявність браку</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="form-box">
+          <div class="form-box__wrap">
+            <h2 class="form-box__title">Залишіть заявку</h2>
+            <div class="form-box__subtitle">та отримайте консультацію</div>
+            <form class="form-box__form" id="form" method="POST">
+              <div class="form-box__form-group">
+                <div class="form-group"><select class="form-box__form-select form-control" name="counter" required="">
+                    <option value="" disabled="" selected="" hidden="">▼ Обрати кількість (шт.)</option>
+                    <option value="1">1 шт = 299 грн</option>
+                    <option value="2">2 шт = 548 грн ( знижка -50грн )</option>
+                    <option value="3">3 шт = 797 грн ( знижка -100грн )</option>
+                    <option value="4">4 шт = 1046 грн ( знижка -150грн )</option>
+                  </select></div>
+                <div class="form-group"><input class="subscribe-box__form-input form-control" name="name" type="text" placeholder="Введіть Ваше імʼя" /></div>
+                <div class="form-group"><input class="subscribe-box__form-input form-control" name="phone" type="tel" autocomplete="on" placeholder="Введіть Ваш телефон" /></div><button class="form-box__form-button form-box__form-button_validate btn btn-default" type="button">Замовити зараз</button><button class="form-box__form-button form-box__form-button_submit btn btn-default" type="submit">Замовити зараз</button>
+              </div>
+            </form>
+          </div>
+          <div class="form-box__thanks">
+            <h2 class="form-box__thanks-title">Дякуємо!</h2>
+            <div class="form-box__thanks-subtitle">Ваша заявка прийнята, <br />найближчим часом ми звʼяжемось з Вами</div>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer__top">
-          <div class="footer__logo">
-            <img class="footer__logo-image" src="assets/img/softbook-logo.png" width="145" height="40" loading="lazy" alt="Softbook" />
+        <div class="footer__inner"><img class="footer__image" src="assets/img/footer-image.jpg" width="480" height="133" loading="lazy" alt="" />
+          <div class="footer__content">
+            <div class="footer__info">
+              <div class="footer__info-text">Адреса компанії: 01001, Україна, м. Київ, вул. Мечникова, 2</div>
+              <div class="footer__info-text">Телефон: <a href="tel:0962980030">+38(096) 298-00-30</a></div>
+              <div class="footer__info-text">Графік роботи: Пн-Вс 9:00 - 21:00</div>
+            </div>
+            <div class="footer__links"><a class="footer__link" href="assets/pdf/public-offer.pdf" target="_blank">Угода користувача</a><a class="footer__link" href="assets/pdf/privacy-policy.pdf" target="_blank">Політика конфіденційності</a><a class="footer__link" href="assets/pdf/warranty-obligations.pdf" target="_blank">Умови гарантії та повернення</a></div>
+            <div class="footer__bottom">Всі права захищено © 2024</div>
           </div>
-          <div class="footer__lang">Lang switcher</div>
-        </div>
-        <div class="footer__main">Main menu</div>
-        <div class="footer__bottom">
-          <div class="footer__bottom-main">
-            <div class="footer__copyright">&copy; 2024 Softbook. Всі права захищені.</div>
-            <ul class="footer__add-menu">
-              <li class="footer__add-menu-item">
-                <a class="footer__add-menu-link" href="/">Політика конфіденційності</a>
-              </li>
-              <li class="footer__add-menu-item">
-                <a class="footer__add-menu-link" href="/">Публічна оферта</a>
-              </li>
-              <li class="footer__add-menu-item">
-                <a class="footer__add-menu-link" href="/">API</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__bottom-aside">Socials</div>
         </div>
       </div>
     </footer>
+    <link href="vendors/swiper/swiper-bundle.min.css" type="text/css" rel="stylesheet">
     <script src="assets/js/main.js"></script>
   </body>
 

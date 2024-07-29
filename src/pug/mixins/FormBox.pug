@@ -1,0 +1,23 @@
+mixin FormBox(config)
+	section.form-box
+		.form-box__wrap
+			h2.form-box__title Залишіть заявку
+			.form-box__subtitle та отримайте консультацію
+			form.form-box__form(id="form" method="POST")
+				.form-box__form-group
+					.form-group
+						select.form-box__form-select.form-control(name="counter" required="")
+							option(value="" disabled="" selected="" hidden="") ▼ Обрати кількість (шт.)
+							option(value="1") 1 шт = 299 грн
+							option(value="2") 2 шт = 548 грн ( знижка -50грн )
+							option(value="3") 3 шт = 797 грн ( знижка -100грн )
+							option(value="4") 4 шт = 1046 грн ( знижка -150грн )
+					.form-group
+						input.subscribe-box__form-input.form-control(name="name" type="text" placeholder="Введіть Ваше імʼя")
+					.form-group
+						input.subscribe-box__form-input.form-control(name="phone" type="tel" autocomplete="on" placeholder="Введіть Ваш телефон")
+					button.form-box__form-button.form-box__form-button_validate.btn.btn-default(type="button") Замовити зараз
+					button.form-box__form-button.form-box__form-button_submit.btn.btn-default(type="submit") Замовити зараз
+		.form-box__thanks
+			h2.form-box__thanks-title Дякуємо!
+			.form-box__thanks-subtitle Ваша заявка прийнята, <br/>найближчим часом ми звʼяжемось з Вами

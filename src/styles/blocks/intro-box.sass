@@ -1,0 +1,173 @@
+@import '../variables'
+
+.intro-box
+	background-color: $darkGrayColor
+	&__top
+		padding: 5px 20px
+		font-weight: 600
+		text-align: center
+		text-transform: uppercase
+		background-color: $whiteColor
+	&__title
+		padding: 10px 0
+		margin: 0
+		font-size: 24px
+		line-height: 1.4
+		font-weight: bold
+		text-align: center
+		color: $brandColor
+		span
+			color: $whiteColor
+	&__slider
+		position: relative
+		overflow: hidden
+		&-item
+			&-i
+				@media #{$phone}
+					width: 100%
+					height: auto
+		&-navigation
+			position: absolute
+			top: 50%
+			left: 0
+			right: 0
+			padding: 0 10px
+			display: flex
+			justify-content: space-between
+			transform: translateY(-50%)
+			z-index: 1
+			&-button
+				position: relative
+				margin: 0
+				padding: 0
+				width: 34px
+				height: 64px
+				border: none
+				background-color: transparent
+				cursor: pointer
+				&:before,
+				&:after
+					position: absolute
+					content: ""
+					left: 0
+					width: 40px
+					height: 4px
+					background-color: $brandColor
+					border-radius: 15px
+				&:before
+					top: 17px
+					transform: rotate(45deg)
+				&:after
+					bottom: 17px
+					transform: rotate(-45deg)
+				&_prev
+					transform: rotate(180deg)
+	&__price
+		&-wrap
+			position: relative
+			margin: -30px 40px 20px
+			display: flex
+			background-color: $brandColor
+			border-radius: 35px
+			overflow: hidden
+			z-index: 2
+		&-box
+			position: relative
+			padding: 10px 20px
+			width: 50%
+			text-align: center
+			&_old
+				position: relative
+				background-color: $whiteColor
+				&:before
+					position: absolute
+					content: ""
+					top: 0
+					right: -15px
+					bottom: 0
+					width: 0
+					height: 0
+					border: 0 solid transparent
+					border-bottom-width: 46px
+					border-top-width: 46px
+					border-left: 15px solid $whiteColor
+				.intro-box__price-value
+					text-decoration: line-through
+			&_new
+				color: $whiteColor
+				.intro-box__price-value
+					font-weight: bold
+		&-title
+			font-size: 20px
+			line-height: 1.2
+		&-value
+			font-size: 40px
+			line-height: 1.2
+		&-currency
+			font-size: 40px
+			line-height: 1.2
+	&__thumbs
+		display: flex
+		&-item
+			position: relative
+			width: 33.333333%
+			padding: 0 10px
+			display: flex
+			align-items: center
+			flex-direction: column
+			cursor: pointer
+			&:before
+				position: absolute
+				content: ""
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background: rgba($siteColor,.7)
+				transition: .2s background ease-in-out
+				z-index: 1
+			&.active
+				&:before
+					background: transparent
+				.intro-box__thumbs-item-image
+					&:after
+						opacity: 1
+						visibility: visible
+			&-image
+				position: relative
+				&:after
+					position: absolute
+					content: "\2713"
+					bottom: 0
+					left: 50%
+					transform: translateX(-50%)
+					width: 30px
+					height: 30px
+					border-radius: 50%
+					padding-top: 5px
+					display: flex
+					justify-content: center
+					align-items: center
+					font-size: 24px
+					font-weight: bold
+					line-height: 1
+					color: $whiteColor
+					background-color: $brandColor
+					opacity: 0
+					visibility: hidden
+					transition: .2s opacity ease-in-out, .2s visibility ease-in-out
+				&-i
+					display: block
+					margin-bottom: 10px
+					width: 100%
+					height: auto
+			&-text
+				padding: 0 15px
+				font-size: 15px
+				line-height: 1.2
+				color: $whiteColor
+				text-align: center
+	&__footer
+		padding: 20px 30px
+	&__button
+		width: 100%
